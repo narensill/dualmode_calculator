@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.toggle-mode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.toggle-mode button {
+    background-color: #FF9500;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-keys button {
+    height: 60px;
+    background-color: #505050;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculator-keys button.operator {
+    background-color: #CC7A00; /* Darker tone of the original color */
+}
+
+.calculator-keys button.equal-sign {
+    background-color: #B56500; /* Even darker tone */
+}
+
+.calculator-keys button.clear {
+    background-color: #D4D4D2;
+    color: #000;
+}
+
+.calculator-keys button:hover {
+    filter: brightness(1.2);
+}
+
+.scientific-keys {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.scientific-keys button {
+    height: 60px;
+    background-color: #505050;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.scientific-keys button.operator {
+    background-color: #CC7A00; /* Darker tone of the original color */
+}
+
+.scientific-keys button.equal-sign {
+    background-color: #B56500; /* Even darker tone */
+}
+
+.scientific-keys button.clear {
+    background-color: #D4D4D2;
+    color: #000;
+}
+
+.scientific-keys button:hover {
+    filter: brightness(1.2);
+}
+
